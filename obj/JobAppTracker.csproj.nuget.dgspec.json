@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Applications/dotnet/JobAppTracker 10.07.26 PM/JobAppTracker.csproj": {}
+    "/Applications/dotnet/JobAppTracker/JobAppTracker.csproj": {}
   },
   "projects": {
-    "/Applications/dotnet/JobAppTracker 10.07.26 PM/JobAppTracker.csproj": {
+    "/Applications/dotnet/JobAppTracker/JobAppTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Applications/dotnet/JobAppTracker 10.07.26 PM/JobAppTracker.csproj",
+        "projectUniqueName": "/Applications/dotnet/JobAppTracker/JobAppTracker.csproj",
         "projectName": "JobAppTracker",
-        "projectPath": "/Applications/dotnet/JobAppTracker 10.07.26 PM/JobAppTracker.csproj",
+        "projectPath": "/Applications/dotnet/JobAppTracker/JobAppTracker.csproj",
         "packagesPath": "/Users/jromarcon/.nuget/packages/",
-        "outputPath": "/Applications/dotnet/JobAppTracker 10.07.26 PM/obj/",
+        "outputPath": "/Applications/dotnet/JobAppTracker/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jromarcon/.nuget/NuGet/NuGet.Config"

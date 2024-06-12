@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cJoq0/OhEbyoezTxhal/7Ymr1cwIW2MzLFDetOuWgYrkEArzWWruLtK7HUw+2Vpkwva1aKzw3zlmd9NR+2VgLw==",
+  "dgSpecHash": "k+YYFlXjS6E+FKnVG85/lqzP/MQbNYIab3BZKwHj/90MNonAxOfQn5BXoIRX1/iIcdD7s37grqsr4ZGg34qYEQ==",
   "success": true,
-  "projectFilePath": "/Applications/dotnet/JobAppTracker 10.07.26 PM/JobAppTracker.csproj",
+  "projectFilePath": "/Applications/dotnet/JobAppTracker/JobAppTracker.csproj",
   "expectedPackageFiles": [
     "/Users/jromarcon/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/jromarcon/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",

@@ -17,8 +17,6 @@ public class JobApp
 
     public string Link {get; set;}
 
-    public string Location {get; set;}
-
     public string Resume {get; set;}
 
     public DateTime DateApplied {get; set;}
