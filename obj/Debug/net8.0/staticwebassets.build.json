@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AUM0ADTwYoJERfDEX+mJHJUTSjqHWdw6w8o5bVE+kPA=",
+  "Hash": "JlZ8vNdzNSpo53oSiWIWN4dv8j1Th+/TeHvuEuNfllQ=",
   "Source": "JobAppTracker",
   "BasePath": "_content/JobAppTracker",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Applications/dotnet/JobAppTracker/obj/Debug/net8.0/scopedcss/projectbundle/JobAppTracker.bundle.scp.css"
+    },
+    {
+      "Identity": "/Applications/dotnet/JobAppTracker/wwwroot/css/bootswatchTheme.css",
+      "SourceId": "JobAppTracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Applications/dotnet/JobAppTracker/wwwroot/",
+      "BasePath": "_content/JobAppTracker",
+      "RelativePath": "css/bootswatchTheme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/bootswatchTheme.css"
     },
     {
       "Identity": "/Applications/dotnet/JobAppTracker/wwwroot/css/site.css",

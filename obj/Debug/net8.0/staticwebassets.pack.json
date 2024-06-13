@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/JobAppTracker.bundle.scp.css"
     },
     {
+      "Id": "/Applications/dotnet/JobAppTracker/wwwroot/css/bootswatchTheme.css",
+      "PackagePath": "staticwebassets/css/bootswatchTheme.css"
+    },
+    {
       "Id": "/Applications/dotnet/JobAppTracker/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

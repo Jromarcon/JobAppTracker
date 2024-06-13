@@ -20,7 +20,7 @@ public class AppController : Controller
     public IActionResult Index()
     {
         string username = User.Identity.Name;
-        IEnumerable<JobApp> job = _db.JobApps.Where(j => j.userId == username).ToList();
+        IEnumerable<JobApp> job = _db.JobApps.Where(j => j.userId == username).OrderBy(j => j.Status).ToList();
         return View(job);
     }
 
