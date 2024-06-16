@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "dotnet",
+			"task": "build",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "dotnet: build"
+		},
+		{
+			"type": "dotnet",
+			"task": "build /Applications/dotnet/JobAppTracker/JobAppTracker.csproj",
+			"file": "/Applications/dotnet/JobAppTracker/JobAppTracker.csproj",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "dotnet: build /Applications/dotnet/JobAppTracker/JobAppTracker.csproj"
+		}
+	]
+}

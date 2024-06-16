@@ -10,7 +10,7 @@
         </div>
         <div class="col-6 text-end">
             <a asp-asp-controller="App" asp-action="Create" class="btn btn-primary">
-                Add Application
+               <i class="bi bi-plus-lg"></i> &nbsp; Add Application 
             </a>
         </div>
     </div>
@@ -52,10 +52,26 @@
                     @obj.Status
                 </td>
                 <td width="16.6%">
-                    @obj.Link
+                    @if (!string.IsNullOrEmpty(obj.Link))
+                    {
+                        <a href="@obj.Link" target="_blank">Application Link</a>
+                    }
+                    else{
+                        <span></span>
+                    }
                 </td>
                 <td width="16.6%">
-                    @obj.Resume
+                    @if (!string.IsNullOrEmpty(obj.Resume))
+                    {
+                        <a href="@Url.Content(obj.Resume)" target="_blank">
+                            <i class="bi bi-file-check"></i>
+                        </a>
+                    }
+                    else
+                    {
+                        <span><i class="bi bi-ban-fill"></i></span>
+                    }
+                    
                 </td>
                 <td width="16.6%">
                     @obj.DateApplied

@@ -1,27 +1,83 @@
 ﻿using System.Security.Claims;
 using JobAppTracker.Data;
 using JobAppTracker.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+
+
+
 
 namespace JobAppTracker.Controllers;
 
 public class AppController : Controller
 {
     private readonly JobApplicationDbContext _db;
+    private readonly IWebHostEnvironment _webHostEnvironment;
 
 
-    public AppController(JobApplicationDbContext db)
+    public AppController(JobApplicationDbContext db, IWebHostEnvironment webHostEnvironment)
     {
         _db = db;
+        _webHostEnvironment = webHostEnvironment;
     
     }
-
+    [Authorize]
     public IActionResult Index()
     {
         string username = User.Identity.Name;
         IEnumerable<JobApp> job = _db.JobApps.Where(j => j.userId == username).OrderBy(j => j.Status).ToList();
+       
         return View(job);
+    }
+
+    //GET ACTION method (Create)
+    public IActionResult Create()
+    {
+        return View();
+    }
+    //POST ACTION method (Create)
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult Create(JobApp obj)
+    {    
+        
+        if (ModelState.IsValid)
+        {
+            var file = Request.Form.Files["Resume"];
+            if (file != null && file.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "uploads");
+
+                if (!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
+
+                var uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(file.FileName);
+                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+
+                obj.Resume = "/uploads/" + uniqueFileName; // Store the file path
+            }
+            else
+            {
+                obj.Resume = null; // Handle case where no file is uploaded
+            }
+
+            string username = User.Identity.Name;
+            obj.userId = username;
+            _db.JobApps.Add(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        return View(obj);
+       
     }
 
 }

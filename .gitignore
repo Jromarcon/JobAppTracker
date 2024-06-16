@@ -1,2 +1,4 @@
-#ignore .appsettings.json file
-.appsettings.json
+# Ignore configuration files
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
