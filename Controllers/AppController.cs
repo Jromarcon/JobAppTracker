@@ -42,9 +42,12 @@ public class AppController : Controller
     [ValidateAntiForgeryToken]
     public IActionResult Create(JobApp obj)
     {    
-        
-        if (ModelState.IsValid)
-        {
+        obj.userId = User.Identity.Name;
+        ModelState.Remove("userId");
+
+        if(ModelState.IsValid)
+        {   
+            //Handling resume file uploads
             var file = Request.Form.Files["Resume"];
             if (file != null && file.Length > 0)
             {
@@ -69,9 +72,7 @@ public class AppController : Controller
             {
                 obj.Resume = null; // Handle case where no file is uploaded
             }
-
-            string username = User.Identity.Name;
-            obj.userId = username;
+            //populating the database with the info inputted
             _db.JobApps.Add(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");

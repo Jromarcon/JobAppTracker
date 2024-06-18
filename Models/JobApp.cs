@@ -6,6 +6,7 @@ public class JobApp
 {
     [Key]
     public int Id {get; set;}
+    [Required]
     public string userId {get; set;}
     [Required]
     public string CompanyName {get; set;}

@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/css/bootswatchTheme.css"
     },
     {
+      "Id": "/Applications/dotnet/JobAppTracker/wwwroot/css/frontPage.css",
+      "PackagePath": "staticwebassets/css/frontPage.css"
+    },
+    {
       "Id": "/Applications/dotnet/JobAppTracker/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
@@ -247,6 +251,22 @@
     {
       "Id": "/Applications/dotnet/JobAppTracker/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Applications/dotnet/JobAppTracker/wwwroot/uploads/a1ad6cda-6f7d-4a60-ac31-1b1e2f0e5962_Jro Resume V1.pdf",
+      "PackagePath": "staticwebassets/uploads/a1ad6cda-6f7d-4a60-ac31-1b1e2f0e5962_Jro Resume V1.pdf"
+    },
+    {
+      "Id": "/Applications/dotnet/JobAppTracker/wwwroot/uploads/cd8eab8f-dd03-4321-a471-2366f14e4b35_Jro Resume V1.pdf",
+      "PackagePath": "staticwebassets/uploads/cd8eab8f-dd03-4321-a471-2366f14e4b35_Jro Resume V1.pdf"
+    },
+    {
+      "Id": "/Applications/dotnet/JobAppTracker/wwwroot/uploads/e5562750-30f2-4e01-8832-abff1a22e2a1_Jro Resume V1.pdf",
+      "PackagePath": "staticwebassets/uploads/e5562750-30f2-4e01-8832-abff1a22e2a1_Jro Resume V1.pdf"
+    },
+    {
+      "Id": "/Applications/dotnet/JobAppTracker/wwwroot/video/BackgroundVideo.mp4",
+      "PackagePath": "staticwebassets/video/BackgroundVideo.mp4"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.JobAppTracker.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -49,7 +49,7 @@
                     @obj.Position
                 </td>
                 <td width="16.6%">
-                    @obj.Status
+                    @obj.Status 
                 </td>
                 <td width="16.6%">
                     @if (!string.IsNullOrEmpty(obj.Link))
@@ -57,14 +57,14 @@
                         <a href="@obj.Link" target="_blank">Application Link</a>
                     }
                     else{
-                        <span></span>
+                        <span>No Link Provided</span>
                     }
                 </td>
                 <td width="16.6%">
                     @if (!string.IsNullOrEmpty(obj.Resume))
                     {
                         <a href="@Url.Content(obj.Resume)" target="_blank">
-                            <i class="bi bi-file-check"></i>
+                            <i class="bi bi-file-check" style="font-size: 24px"></i>
                         </a>
                     }
                     else
