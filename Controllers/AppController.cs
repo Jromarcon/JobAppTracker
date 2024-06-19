@@ -81,4 +81,63 @@ public class AppController : Controller
        
     }
 
+    public IActionResult Edit(int? Id)
+    {
+        if(Id==null || Id==0)
+        {
+            return NotFound();
+        }
+
+        var applicationDatabase = _db.JobApps.Find(Id);
+
+        if(applicationDatabase == null)
+        {
+            return NotFound();
+        }
+        return View(applicationDatabase);
+    }
+    //POST ACTION method (Edit)
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult Edit(JobApp obj)
+    {    
+        obj.userId = User.Identity.Name;
+        ModelState.Remove("userId");
+
+        if(ModelState.IsValid)
+        {   
+            //Handling resume file uploads
+            var file = Request.Form.Files["Resume"];
+            if (file != null && file.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "uploads");
+
+                if (!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
+
+                var uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(file.FileName);
+                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+
+                obj.Resume = "/uploads/" + uniqueFileName; // Store the file path
+            }
+            else
+            {
+                obj.Resume = null; // Handle case where no file is uploaded
+            }
+            //populating the database with the info inputted
+            _db.JobApps.Update(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        return View(obj);
+       
+    }
+
 }

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobAppTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e4ee3f9a91c67fdc8af4eba57b5ab2d71597f26")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5469ed8cfe9cae41bd6fda52b7ed1fcce42ec793")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobAppTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobAppTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
