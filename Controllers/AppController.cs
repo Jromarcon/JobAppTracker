@@ -140,4 +140,35 @@ public class AppController : Controller
        
     }
 
+    public IActionResult Delete(int? Id)
+    {
+        if(Id==null || Id==0)
+        {
+            return NotFound();
+        }
+
+        var applicationDatabase = _db.JobApps.Find(Id);
+
+        if(applicationDatabase == null)
+        {
+            return NotFound();
+        }
+        return View(applicationDatabase);
+    }
+    //POST ACTION method (Delete)
+    [HttpPost, ActionName("Delete")]
+    [ValidateAntiForgeryToken]
+    public IActionResult DeletePost(int? Id)
+    {    
+        var obj = _db.JobApps.Find(Id);
+        if(obj == null)
+        {
+            return NotFound();
+        }
+        _db.JobApps.Remove(obj);
+        _db.SaveChanges();
+        return RedirectToAction("Index");
+       
+    }
+
 }

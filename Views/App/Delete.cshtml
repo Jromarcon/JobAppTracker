@@ -1,0 +1,42 @@
+@model JobApp
+
+<form method="post" enctype="multipart/form-data" asp-action="Delete">
+    <input asp-for="Id" hidden />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primart">Delete Application</h2>
+            <hr/>
+        </div>
+        <div class="mb-3">
+            <label asp-for="CompanyName">Company Name</label>
+            <input asp-for="CompanyName" disabled class="form-control" />
+            
+        </div>
+        <div class="mb-3">
+            <label asp-for="Position"></label>
+            <input asp-for="Position" disabled  class="form-control" />
+           
+        </div>
+        <div class="mb-3">
+            <label asp-for="Status" class="control-label"></label>
+            <select asp-for="Status" disabled  class="form-control">
+                <option value="Applied">Applied</option>
+                <option value="Interview">Interview</option>
+                <option value="Final Round">Final Round</option>
+                <option value="Offer">Offer</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Link"></label>
+            <input asp-for="Link" disabled  class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Resume">Upload Resume</label>
+            <input type="file" name="Resume" disabled  class="form-control" accept=".pdf,.doc,.docx" />
+            
+        </div>
+        <button type="submit" class="btn btn-danger" style="width=150px">Delete</button>
+        <a asp-controller="App" asp-action="Index" class="btn btn-secondary" style="width:150px">Go Back</a>
+    </div>
+</form>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f0vM7wnTpASAMr199MVwhj8VhXAE1EbdBN3bu7NqSMw=",
+  "Hash": "ewTJWNiZF1IHlNN6YL1lwUyyxVwfHJdHRr/Bu9TS/uk=",
   "Source": "JobAppTracker",
   "BasePath": "_content/JobAppTracker",
   "Mode": "Default",
@@ -1250,6 +1250,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/uploads/a1ad6cda-6f7d-4a60-ac31-1b1e2f0e5962_Jro Resume V1.pdf"
+    },
+    {
+      "Identity": "/Applications/dotnet/JobAppTracker/wwwroot/uploads/b0a35ea7-a9a5-4ed0-bfe2-251cbe0035d2_Jro Resume V1.pdf",
+      "SourceId": "JobAppTracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Applications/dotnet/JobAppTracker/wwwroot/",
+      "BasePath": "_content/JobAppTracker",
+      "RelativePath": "uploads/b0a35ea7-a9a5-4ed0-bfe2-251cbe0035d2_Jro Resume V1.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/b0a35ea7-a9a5-4ed0-bfe2-251cbe0035d2_Jro Resume V1.pdf"
     },
     {
       "Identity": "/Applications/dotnet/JobAppTracker/wwwroot/uploads/cd8eab8f-dd03-4321-a471-2366f14e4b35_Jro Resume V1.pdf",

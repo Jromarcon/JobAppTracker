@@ -1024,6 +1024,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\a1ad6cda-6f7d-4a60-ac31-1b1e2f0e5962_Jro Resume V1.pdf))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\b0a35ea7-a9a5-4ed0-bfe2-251cbe0035d2_Jro Resume V1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>JobAppTracker</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/JobAppTracker</BasePath>
+      <RelativePath>uploads/b0a35ea7-a9a5-4ed0-bfe2-251cbe0035d2_Jro Resume V1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\b0a35ea7-a9a5-4ed0-bfe2-251cbe0035d2_Jro Resume V1.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\cd8eab8f-dd03-4321-a471-2366f14e4b35_Jro Resume V1.pdf))">
       <SourceType>Package</SourceType>
       <SourceId>JobAppTracker</SourceId>
